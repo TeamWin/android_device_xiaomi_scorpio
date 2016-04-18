@@ -1,0 +1,11 @@
+# mount point	fstype	device					device2				flags
+/boot		emmc	/dev/block/bootdevice/by-name/boot
+/cache		ext4	/dev/block/bootdevice/by-name/cache
+/recovery	emmc	/dev/block/bootdevice/by-name/recovery					flags=backup=1
+/system		ext4	/dev/block/bootdevice/by-name/system
+/data		ext4	/dev/block/bootdevice/by-name/userdata
+/firmware	vfat	/dev/block/bootdevice/by-name/modem					flags=display="Firmware";fsflags=ro
+/cust		ext4	/dev/block/bootdevice/by-name/cust					flags=display="Cust"
+
+# Removable storage
+/usb_otg	vfat	/devices/soc/6a00000.ssusb/6a00000.dwc3/xhci-hcd.0.auto/usb1*		flags=display="USB-OTG";storage;wipeingui;removable
