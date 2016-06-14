@@ -6,6 +6,7 @@
 /data		ext4	/dev/block/bootdevice/by-name/userdata					flags=encryptable=footer;length=-16384
 /firmware	vfat	/dev/block/bootdevice/by-name/modem					flags=display="Firmware";mounttodecrypt;fsflags=ro
 /cust		ext4	/dev/block/bootdevice/by-name/cust					flags=display="Cust"
+/misc		emmc	/dev/block/bootdevice/by-name/misc
 
 # Removable storage
 /usb_otg	vfat	/devices/soc/6a00000.ssusb/6a00000.dwc3/xhci-hcd.0.auto/usb1*		flags=display="USB-OTG";storage;wipeingui;removable
