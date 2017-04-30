@@ -186,9 +186,6 @@
 /dev/tsc_mux0             0660   media       media
 /dev/tsc_ci0              0660   media       media
 
-# ultrasonic fingerprint
-/sys/devices/soc/757a000.i2c/i2c-6/*                eeprom         0440    system   system
-
 # sensors
 /sys/devices/i2c-12/12-*  pollrate_ms 0664 system system
 /sys/devices/f9925000.i2c/i2c-0/0-*                 enable         0660    input    system
@@ -235,8 +232,6 @@
 # SSR devices
 /dev/subsys_*         0640   system     system
 
-# Ultrasound device
-/dev/usf1                 0660   system     system
 
 # Ramdump devices
 /dev/ramdump*             0640   system     system
@@ -245,8 +240,6 @@
 /dev/qbt1000              0660   system     system
 /dev/fpc1020              0666   system     system
 
-# Capacitive touch emulation device
-/dev/captouch             0666   system     system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
