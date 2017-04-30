@@ -1,24 +1,3 @@
-## TWRP device tree for Xiaomi Mi Note 2 (scorpio)
-
-Add to `.repo/local_manifests/scorpio.xml`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-	<project path="device/xiaomi/scorpio" name="stonetrapping/twrp_android_device_xiaomi_scorpio" remote="github" revision="android-6.0" />
-</manifest>
-```
-
-Then run `repo sync` to check it out.
-
-To build:
-
-```sh
-. build/envsetup.sh
-lunch omni_scorpio-eng
-make -j5 recoveryimage
-```
-
 TWRP Device configuration for Xiaomi Mi Note 2
 ==============
 
